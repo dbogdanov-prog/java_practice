@@ -1,0 +1,10 @@
+class Product {
+    public double price() { return 10; }
+    public String describe() { return "product"; }
+}
+
+class Bad extends Product {
+    @Override public boolean equals(Bad b) { return true; }
+    @Override String describe() { return "x"; }
+    @Override public int price() { return 1; }
+}

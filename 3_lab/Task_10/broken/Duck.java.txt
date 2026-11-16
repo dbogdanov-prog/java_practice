@@ -1,0 +1,10 @@
+interface Walker {
+    default String move() { return "иду"; }
+}
+
+interface Swimmer {
+    default String move() { return "плыву"; }
+}
+
+class Duck implements Walker, Swimmer {
+}
